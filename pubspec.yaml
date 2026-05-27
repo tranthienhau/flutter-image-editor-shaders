@@ -1,0 +1,26 @@
+name: flutter_image_editor_shaders
+description: "Flutter photo editor POC with shader-based filters (exposure, contrast, saturation, tone curve, LUT, grain)."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_riverpod: ^2.5.1
+  image_picker: ^1.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/luts/
+  shaders:
+    - shaders/filter.frag
