@@ -2,6 +2,16 @@
 
 Cross-platform photo editor POC. Real-time, GPU-accelerated tone + color filters using Flutter's `FragmentProgram` (GLSL). Portable analogue to iOS Core Image / Metal `CIColorCube` pipelines, with the same building blocks (per-pixel ops on the GPU, 3D LUT sampling, tone curves, grain) running on both iOS and Android from a single Dart codebase.
 
+## Demo
+
+Real iOS-Simulator captures of the running app (not mockups). See [FLOW.md](FLOW.md) for how they were generated.
+
+| Editor loaded | Kodak preset | Noir preset | Manual edit |
+|---|---|---|---|
+| ![Editor loaded](screenshots/01-editor-loaded.png) | ![Kodak preset](screenshots/02-kodak-preset.png) | ![Noir preset](screenshots/03-noir-preset.png) | ![Manual edit](screenshots/04-manual-edit.png) |
+
+![Demo](screenshots/demo.gif)
+
 ## Why this POC
 
 Mirrors what a senior iOS image-processing engineer would build with Core Image + Metal:
