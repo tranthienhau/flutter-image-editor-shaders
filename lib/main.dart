@@ -122,6 +122,9 @@ class EditorController extends StateNotifier<EditorState> {
 
   void updateParams(FilterParams p) => state = state.copyWith(params: p);
 
+  /// Seed a decoded image directly (used by demos/tests without a gallery).
+  void setImage(ui.Image img) => state = state.copyWith(image: img);
+
   void applyPreset(Preset p) {
     final params = switch (p) {
       Preset.vsco => const FilterParams(exposure: 0.1, contrast: 0.1, saturation: -0.1, temperature: 0.05, shadows: 0.05, highlights: -0.1, lutMix: 0.7),
